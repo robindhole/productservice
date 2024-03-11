@@ -17,11 +17,12 @@ public interface ProductService {
 
     Product getOneProduct(Long productId);
 
-    List<Product> getProductCategoryByName(String name);
+
 
     Product deleteProduct(Long productId);
 
+    Product updateProduct(Product product, Long productId, String type);
+
     Product updateProduct(Product product, Long productId);
 
-    List<Category> getAllCategories();
 }
